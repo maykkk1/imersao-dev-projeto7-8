@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 854px;
+  background-image: url("https://external-preview.redd.it/B_GBZiwxtcauw62U4G13uT8qycVeCLciM_UGFTZqDWU.jpg?auto=webp&s=9128e31712ff92038b574d66037bc275df6b0fc5");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-weight: bolder;
+  color: white;
+  background-image: url("https://img.freepik.com/free-photo/black-paper-texture-background_263512-218.jpg");
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-title {
+  font-size: 4rem;
+  color: white;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.board {
+  min-height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.result {
+  font-size: 2rem;
+  opacity: 0;
+  transition: 600ms;
+}
+
+.playerOneSection,
+.playerTwoSection {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.amountOfCards {
+  width: 170px;
+  height: 40px;
+  background-color: beige;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  height: 400px;
+  background-image: url("https://img.freepik.com/free-photo/black-paper-texture-background_263512-218.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  color: rgb(24, 4, 43);
+  overflow: hidden;
+}
+
+.card-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.card-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+  width: 90%;
+  height: 7%;
+  font-size: 1rem;
+  background-image: url("https://media.istockphoto.com/vectors/light-colored-beige-vintage-paper-vector-id959104114?k=20&m=959104114&s=612x612&w=0&h=WDTcSm_eBxX7qAaUZVAuN-LRmImxGQNgocpFobjnYS4=");
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: "MedievalSharp", cursive;
+}
+
+.cardImgWrapper {
+  width: 90%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.cardImgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.opcoes {
+  margin-top: 10px;
+  background-image: url("https://media.istockphoto.com/vectors/light-colored-beige-vintage-paper-vector-id959104114?k=20&m=959104114&s=612x612&w=0&h=WDTcSm_eBxX7qAaUZVAuN-LRmImxGQNgocpFobjnYS4=");
+  width: 90%;
+  height: 22%;
+  line-height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
